@@ -1,0 +1,41 @@
+
+.list-content {
+    display: flex;
+    width: 100%;
+    padding: 0.7rem;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+}
+
+.list-content .profile {
+    width: 25%;
+    pointer-events: none;
+}
+
+.list-content .caption {
+    width: 75%;
+    padding-left: 6px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    pointer-events: none;
+}
+
+.list-content img {
+    width: 100px;
+    height: 100px;
+}
+
+.list-content h3 {
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.list-content p {
+    color: #3c5165;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -45px;
+}

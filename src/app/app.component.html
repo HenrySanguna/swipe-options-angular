@@ -1,0 +1,11 @@
+<h1>SWIPE ELEMENTS</h1>
+<swiper-container [options]="options" [data]="data" [templateData]="templateData">
+</swiper-container>
+<ng-template #templateData let-item="item">
+  <div class="list-content">
+  <div class="caption">
+    <h3>{{item.name}}</h3>
+    <p>{{item.description}}</p>
+  </div>
+</div>
+</ng-template>

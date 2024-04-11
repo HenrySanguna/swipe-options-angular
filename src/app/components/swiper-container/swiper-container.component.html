@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="list" *ngFor="let item of data">
+        <div class="button-options left" *ngIf="options.optionsLeft.length > 0">
+            <button *ngFor="let itemLeft of options.optionsLeft" [ngClass]="'bg-'+itemLeft.background" (click)="itemLeft.action()">
+                <div class="list-icon">
+                    <i [class]="itemLeft.icon"></i>
+                </div>
+            </button>
+        </div>
+        <div class="list-item">
+            <ng-container [ngTemplateOutlet]="templateData" [ngTemplateOutletContext]="{item:item}"></ng-container>
+        </div>
+        <div class="button-options right" *ngIf="options.optionsRight.length > 0">
+            <button *ngFor="let itemRight of options.optionsRight" [ngClass]="'bg-'+itemRight.background" (click)="itemRight.action()">
+                <div class="list-icon">
+                    <i [class]="itemRight.icon"></i>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
