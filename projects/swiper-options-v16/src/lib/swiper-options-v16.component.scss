@@ -1,0 +1,66 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.list .list-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    padding: 0.7rem;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+}
+
+.list .button-options {
+    z-index: 0;
+    position: absolute;
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    top: 1px;
+    bottom: 1px;
+    margin: 10px 0;
+
+    &.left {
+        justify-content: flex-start;
+        left: 1px;
+    }
+
+    &.right {
+
+        right: 1px;
+        justify-content: flex-end;
+    }
+
+    button {
+        height: 100%;
+        width: 25%;
+        border: none;
+    }
+}
+
+.list button .list-icon {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    height: 100%;
+    justify-content: center;
+}
